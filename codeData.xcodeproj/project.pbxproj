@@ -11,13 +11,15 @@
 		6926A61C247C50B40090BDDA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6926A61B247C50B40090BDDA /* SceneDelegate.swift */; };
 		6926A61E247C50B40090BDDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6926A61D247C50B40090BDDA /* ViewController.swift */; };
 		6926A621247C50B40090BDDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6926A61F247C50B40090BDDA /* Main.storyboard */; };
-		6926A624247C50B40090BDDA /* codeData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6926A622247C50B40090BDDA /* codeData.xcdatamodeld */; };
+		6926A624247C50B40090BDDA /* Banking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6926A622247C50B40090BDDA /* Banking.xcdatamodeld */; };
 		6926A626247C50B50090BDDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6926A625247C50B50090BDDA /* Assets.xcassets */; };
 		6926A629247C50B50090BDDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6926A627247C50B50090BDDA /* LaunchScreen.storyboard */; };
+		6926A633247C5D820090BDDA /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6926A632247C5D820090BDDA /* CoreDataManager.swift */; };
+		6926A635247C5FEC0090BDDA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6926A634247C5FEC0090BDDA /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6926A616247C50B40090BDDA /* codeData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = codeData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6926A616247C50B40090BDDA /* Core Data Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Core Data Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6926A619247C50B40090BDDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6926A61B247C50B40090BDDA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6926A61D247C50B40090BDDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		6926A625247C50B50090BDDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6926A628247C50B50090BDDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6926A62A247C50B50090BDDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6926A632247C5D820090BDDA /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		6926A634247C5FEC0090BDDA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +54,7 @@
 		6926A617247C50B40090BDDA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6926A616247C50B40090BDDA /* codeData.app */,
+				6926A616247C50B40090BDDA /* Core Data Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,7 +69,9 @@
 				6926A625247C50B50090BDDA /* Assets.xcassets */,
 				6926A627247C50B50090BDDA /* LaunchScreen.storyboard */,
 				6926A62A247C50B50090BDDA /* Info.plist */,
-				6926A622247C50B40090BDDA /* codeData.xcdatamodeld */,
+				6926A622247C50B40090BDDA /* Banking.xcdatamodeld */,
+				6926A632247C5D820090BDDA /* CoreDataManager.swift */,
+				6926A634247C5FEC0090BDDA /* User.swift */,
 			);
 			path = codeData;
 			sourceTree = "<group>";
@@ -73,9 +79,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6926A615247C50B40090BDDA /* codeData */ = {
+		6926A615247C50B40090BDDA /* CoreDataExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6926A62D247C50B50090BDDA /* Build configuration list for PBXNativeTarget "codeData" */;
+			buildConfigurationList = 6926A62D247C50B50090BDDA /* Build configuration list for PBXNativeTarget "CoreDataExample" */;
 			buildPhases = (
 				6926A612247C50B40090BDDA /* Sources */,
 				6926A613247C50B40090BDDA /* Frameworks */,
@@ -85,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = codeData;
+			name = CoreDataExample;
 			productName = codeData;
-			productReference = 6926A616247C50B40090BDDA /* codeData.app */;
+			productReference = 6926A616247C50B40090BDDA /* Core Data Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -118,7 +124,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6926A615247C50B40090BDDA /* codeData */,
+				6926A615247C50B40090BDDA /* CoreDataExample */,
 			);
 		};
 /* End PBXProject section */
@@ -143,8 +149,10 @@
 			files = (
 				6926A61E247C50B40090BDDA /* ViewController.swift in Sources */,
 				6926A61A247C50B40090BDDA /* AppDelegate.swift in Sources */,
-				6926A624247C50B40090BDDA /* codeData.xcdatamodeld in Sources */,
+				6926A635247C5FEC0090BDDA /* User.swift in Sources */,
+				6926A624247C50B40090BDDA /* Banking.xcdatamodeld in Sources */,
 				6926A61C247C50B40090BDDA /* SceneDelegate.swift in Sources */,
+				6926A633247C5D820090BDDA /* CoreDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,10 +303,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.betosalcido.coredata.codeData;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.betosalcido.coredata;
+				PRODUCT_NAME = "Core Data Example";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -313,10 +321,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.betosalcido.coredata.codeData;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.betosalcido.coredata;
+				PRODUCT_NAME = "Core Data Example";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -332,7 +340,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6926A62D247C50B50090BDDA /* Build configuration list for PBXNativeTarget "codeData" */ = {
+		6926A62D247C50B50090BDDA /* Build configuration list for PBXNativeTarget "CoreDataExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6926A62E247C50B50090BDDA /* Debug */,
@@ -344,13 +352,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		6926A622247C50B40090BDDA /* codeData.xcdatamodeld */ = {
+		6926A622247C50B40090BDDA /* Banking.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				6926A623247C50B40090BDDA /* codeData.xcdatamodel */,
 			);
 			currentVersion = 6926A623247C50B40090BDDA /* codeData.xcdatamodel */;
-			path = codeData.xcdatamodeld;
+			path = Banking.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
